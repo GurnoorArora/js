@@ -18,3 +18,4 @@ console.log(A.slice(1,3));
 console.log(A);
 console.log(A.splice(1,3));//even includes the last one and cuts the part of the array from the rest
 console.log(A);
+//checking what blame is
