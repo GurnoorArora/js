@@ -25,3 +25,64 @@ Jsuser.greeting2=function()
     
 }
 console.log(Jsuser.greeting2());
+
+
+const tinderUser={}
+tinderUser.id="123";
+tinderUser.name="Sammy";
+tinderUser.isLoggedin=false;
+
+console.log(tinderUser);
+
+const regularUser=
+{
+    email:"sum@gmail.com",
+    fullname:{
+        userfullname:{
+            firstname:"gurnoor",
+            lastname:"arora"
+        }
+    }
+}
+console.log(regularUser.fullname);
+console.log(regularUser.fullname.userfullname);
+//combining objects
+const obj1={
+    1:"a",
+    2:"b"
+
+}
+
+const obj2={
+    3:"c",
+    4:"d"
+}
+
+const obj3=Object.assign({},obj1,obj2);//this function 'assign' assign's arguments have 2 parameters (target,source)
+//here it returns a new object to and the target is the new object if it was obj1 in place of  {} then the changes woudl have been 
+//made to obj1 itself now since we took {} thats why we are making changes to an empty object and then storing it in obj3
+console.log(obj3);
+console.log(obj1);
+// we can ALSO USE 'SPREAD OPERATOR ...' 
+const obj4={...obj1,...obj2};
+console.log(obj4);
+
+//array of objects
+const users=[
+    {
+        id:1,
+        email:"1@gmail.com"
+    },
+    {
+        id:2,
+        email:"2@gmail.com"
+    }
+]
+console.log(users[1].email);
+//now we will try to retrieve the keys and values //results the keys and values in array
+
+console.log(Object.keys(tinderUser));
+console.log(Object.values(tinderUser));
+console.log(Object.entries(tinderUser));
+
+console.log(tinderUser.hasOwnProperty('name'));
