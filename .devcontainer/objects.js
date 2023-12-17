@@ -85,4 +85,16 @@ console.log(Object.keys(tinderUser));
 console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('name'));
+console.log(tinderUser.hasOwnProperty('name')); 
+
+const course={
+    coursename:"js in hindi",
+    price:"999",
+    courseInstructor:"hitesh"
+}
+//to make code cleaner
+//we use a differe kind of syntax
+//const{jo values we have to extract}=the object from which value is to be extracted
+
+const{courseInstructor: instructor}=course;
+console.log(instructor);
